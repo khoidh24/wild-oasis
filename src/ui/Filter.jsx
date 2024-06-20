@@ -52,6 +52,7 @@ const Filter = ({ filterField, options }) => {
           onClick={() => handleClick(opt.value)}
           //BUG: From Styled-component new version: Received `true` for a non-boolean attribute `active`.
           active={opt.value === currentFilter}
+          disabled={opt.value === currentFilter}
         >
           {opt.label}
         </FilterButton>
